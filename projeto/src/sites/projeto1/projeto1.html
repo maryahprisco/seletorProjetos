@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 1 - Display</title>
+    <link rel="stylesheet" href="../../framework/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .accordion-item {
+            width: 40vw;
+        }
+
+        .cabecalho {
+            background-image: radial-gradient(circle, #9250c4, #9250c4, #9250c4, #9250c4, #9250c4);
+        }
+
+
+        .cabecalho a:hover {
+            color: #a581c2
+        }
+
+        .cabecalho a:active {
+            color: #651aa1
+        }
+
+        .cabecalho a:focus {
+            color: #ffffff;
+        }
+    </style>
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- CABEÇALHO -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary cabecalho height:15vh">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">HTML E CSS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                               Mais
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">HTML</a></li>
+                                <li><a class="dropdown-item" href="#">CSS</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Ajuda?</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Inativo</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="" placeholder="PESQUISE" aria-label="Search" />
+                        <buttontype="button" class="btn btn-secondary btn-sm"> 🔍︎</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <!-- CONTEUDO -->
+    <main class="flex-fill">
+
+        <section>
+            <div style="height: 90vh; background-color:white">
+                <div class="row" style="height: 90vh;">
+
+                    <div class="col-12 col-md-6"
+                        style="background-color:#c58cf2;display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                        <h1 class="fw-light">VENHA APRENDER HTML E CSS</h1>
+                        <br>
+                        <br>
+                        <p>Guia feito para apresentar maiores informações sobre HTML</p>
+                        <br>
+                        <button type="button" class="btn btn-outline-secondary">Saiba mais</button>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center flex-column"
+                        style="background-color: rgb(221, 221, 221);">
+                        <h2 class="fw-light">CONTEÚDOS</h2>
+                        <br>
+                        <br>
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        HTML
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <strong>HTML (HyperText Markup Language)</strong> é uma linguagem de marcação
+                                        usada para estruturar e exibir conteúdo em páginas web. Não é uma linguagem de
+                                        programação, mas sim uma ferramenta para organizar informações em um formato
+                                        compreensível pelos navegadores, como texto, imagens, links e outros elementos.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseTwo">
+                                        CSS
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <strong>CSS, ou Cascading Style Sheets (Folhas de Estilo em Cascata)</strong> ,
+                                        é uma linguagem utilizada para definir a apresentação visual de um documento
+                                        web, geralmente HTML. Em outras palavras, o CSS controla como os elementos de
+                                        uma página são exibidos, como cores, fontes, espaçamento, layout, etc.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section>
+            <div 
+                style="height: 50vh; background-color: #d9bdee;display: flex;flex-direction: column;justify-content: center;align-items: center; overflow-y: scroll;">
+                <h1 class="fw-light">
+                    O que é a propriedade Display em CSS?
+                </h1>
+                <br>
+                <p style="text-align: center;">
+                    Em CSS, a propriedade display é fundamental para definir como um elemento HTML é exibido e como ele
+                    se comporta no fluxo do documento, determinando se ele é tratado como um elemento de bloco (block),
+                    linha (inline), ou um contêiner para outros elementos, como em layouts Flexbox ou Grid. Ela controla
+                    a apresentação visual e o espaçamento do elemento, afetando sua interação com outros elementos na
+                    página.
+                </p>
+            </div>
+            <div style="height: 50vh; background-color: #e2d4ec; overflow-y: scroll;">
+                     <table class="table table-hover table-responsive-sm mt-5">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Display</th>
+                                <th scope="col">Características</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Block</th>
+                                <td>Faz com que um elemento ocupe toda a largura disponível do seu elemento pai, iniciando em uma nova linha e forçando os outros elementos a irem para a linha de baixo.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Inline</th>
+                                <td>Faz com que um elemento ocupe apenas o espaço necessário para o seu conteúdo, ficando na mesma linha que outros elementos, em vez de começar numa nova linha, como faria um elemento block.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Inline-block</th>
+                                <td>Permite que um elemento se comporte como um bloco, mas se comporte como um elemento em linha em relação aos outros elementos ao seu redor.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </table>
+            </div>
+           
+           
+
+        </section>
+
+
+
+
+
+
+
+
+    </main>
+
+
+    <!-- RODAPE -->
+    <footer class="footer mt-auto cabecalho">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">TODOS OS DIREITOS RESERVADOS</a>
+            </li>
+        </ul>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../../framework/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
